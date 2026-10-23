@@ -1,0 +1,14 @@
+{
+  "name": "yumu-lineage-official",
+  "version": "1.0.0",
+  "private": true,
+  "description": "雨沐天堂獨立官方網站",
+  "scripts": {
+    "dev": "node scripts/serve.cjs",
+    "build": "node scripts/build-pages.cjs",
+    "check": "node scripts/check.cjs"
+  },
+  "devDependencies": {
+    "linkedom": "^0.18.14"
+  }
+}

@@ -1,0 +1,41 @@
+雨沐天堂素材製作提示詞
+生成方式：內建 imagegen。
+
+LINE 頭貼初稿
+Use case: logo-brand.
+Asset type: official LINE profile avatar for 雨沐天堂, square 1024x1024 composition, opaque background.
+Input image: approved 雨沐天堂 wordmark, BRAND AND TYPOGRAPHIC REFERENCE. Recompose this identity specifically for a square avatar; do not paste a narrow banner into the square.
+Text verbatim: large “雨沐” on the upper line, medium “天堂” directly below, tiny but crisp “YUMU LINEAGE” beneath. Correct Traditional Chinese. No other text.
+Retain the approved custom calligraphic medieval serif typography, pearl silver letter faces, dark jade edges and delicate champagne-gold contours. Create a compact centered vertical arrangement, prestigious classic medieval fantasy MMORPG identity, renewal after rain. Subtle slim dawn arc behind lettering and one turquoise drop integrated into the mark.
+Background: refined deep blue-green jade with very soft rain-cleared mist and restrained pale sunrise glow behind the mark, high contrast, no detailed scene. Quiet luxury, beautiful sharp typography. All lettering and important ornaments must fit inside a centered circle 74% of the square width, with ample breathing room for circular cropping. Large highly readable Chinese lettering for small profile icon use.
+Avoid: busy scenery, people, dragons, wings, crowns, shields, excess gold, fireworks, strong flares, tiny main lettering, billboard mockup, 3D product scene, extra words, watermark. Entire square must be fully filled with an opaque background.
+
+LINE 頭貼圓形裁切調整
+Use case: precise-object-edit.
+Edit target: supplied square 雨沐天堂 LINE avatar.
+Change only framing and scale: uniformly shrink the complete foreground group (all Chinese and English text, the dawn ring and its star, all metallic flourishes) to 76% of its current size about the exact image center. Extend the same opaque teal mist background seamlessly around it. Keep same square dimensions.
+The current artwork is too close to the edges for LINE's circular cropping. Every letter of “雨沐天堂” and “YUMU LINEAGE” must sit comfortably inside an invisible centered circle with diameter 82% of the square. The entire typography group's bounding box should be inside central 70% of width and 70% of height. No parts of letters cropped. Add generous space at the top, bottom, left and right.
+Preserve letterforms, correct Traditional Chinese and English, arrangement, silver and jade materials, small gold edges, rain-cleared teal mist background. Do not add any new imagery or text. Do not draw a crop guide. Opaque square background.
+
+無字背景
+Use case: stylized-concept.
+Asset type: premium official website background for the fantasy MMORPG brand 雨沐天堂. One large landscape 16:9 image, ideally 2560x1440 or larger. NO LETTERING, no logo.
+Input image role: approved brand logo is a COLOR AND MOOD REFERENCE ONLY. Do not depict the logo, lettering, arc emblem or its layout.
+Primary request: a fresh, refined medieval fantasy world in the quiet moment after rain, symbolizing renewal and a new beginning. Classic early-2000s Korean medieval fantasy RPG setting with grounded European stonework and understated high fantasy.
+Scene: a tranquil jade-green valley and still lake, soft mountain layers, distant small pale stone medieval citadel partly obscured by dissolving rain mist, fresh forest, a rain-wet old stone parapet or terrace near the lower corners. Sparse delicate leaves with tiny raindrops at the far edges. No people.
+Composition: expansive environmental backdrop with an uncluttered soft blue-green fog area across the central and left 60% for future interface text, no dominant foreground object, main distant architectural interest in the far right third. Gentle depth and low visual noise, all edges usable for website cover cropping.
+Lighting: sunrise just after rainfall, natural pale warm daylight grazing stone, bright clearing sky, silvery soft volumetric mist. Restrained and believable, calm and hopeful, airy with deep jade anchors at bottom corners.
+Palette: desaturated celadon and teal, mist silver, pale blue-grey, soft ivory sunlight, tiny champagne highlights; rich but not oversaturated. Painterly AAA game environment matte painting, exquisite controlled composition and atmospheric perspective, subtle material detail.
+Avoid: dark storm, black/gold, fire, floating islands, gigantic impossible spires, oversize waterfalls, rainbows, glowing magical rings, sparkle confetti, neon, characters, weapons, UI, frames, typography, watermark, excessively detailed clutter.
+
+官方網站主視覺（含 LOGO）
+Use case: ads-marketing.
+Asset type: finished official website HERO KEY ART for 雨沐天堂 with prominent approved logo. Wide 16:9 landscape, ideally 2560x1440 or higher, polished production-ready full-bleed image.
+Input image 1: approved transparent “雨沐天堂 / YUMU LINEAGE” logo, EXACT BRAND LOGO to integrate. Preserve its recognizable jade/silver sculpted Chinese letterforms, champagne outlines, raindrop and dawn arc, and precise text.
+Input image 2: the approved rain-cleared lake and castle artwork, ENVIRONMENT AND LIGHTING REFERENCE.
+Primary request: create a luxurious but fresh classic medieval fantasy MMORPG launch key visual about rebirth and the sun returning after rain, integrating the supplied logo prominently and clearly into the artwork.
+Composition: the approved horizontal Chinese logo and its smaller English subtitle occupy left-center, spanning about 45% of image width, clear silhouette, fully within the image with at least 8% outer margin. Place it over a quieter patch of blue-green atmospheric mist so both silver and jade edges read well; a very subtle localized darker mist behind the lettering may improve contrast, but no solid panel. Leave the top 12% quiet for future website navigation. Foreground character group in the RIGHT THIRD, not covering the logo: one dignified human knight with practical engraved silver armor and a muted dark jade cloak, sword resting downward, standing near a slender adult female elf archer in elegant forest attire, no excessive exposed skin. Three-quarter figures and natural anatomy, calm heroic pose, both looking toward the newly lit distant kingdom. Classic early-2000s Korean medieval fantasy RPG character illustration feel, painterly and tasteful rather than hyperreal AI model faces. Faces small and secondary to the brand.
+Environment: rain-wet medieval terrace, fresh leaves near the outer edges, a jade-blue lake and distant pale stone citadel, mountain layers with mist opening after rain. The sunlight emerges behind the castle at upper right, natural soft ivory and pale champagne light reflecting in wet stone. Fresh, hopeful, refined, quiet grandeur.
+Palette: celadon green, rain-washed deep teal, pearl silver, soft blue-grey atmosphere, tiny champagne gold highlights. Premium restrained key-art composition, excellent craft, coherent lighting, beautiful atmospheric perspective.
+Text verbatim and only: “雨沐天堂” and “YUMU LINEAGE”, using the supplied approved logo. No dates, no slogans, no buttons, no interface, no other text.
+Avoid: generic fiery battle scene, black and gold dominance, oversaturated neon, giant glowing weapons, dragons, wings, shields behind logo, baroque frame, noisy glitter, crown icons, plastic faces, garbled Chinese, misspelled English, watermark. This must be finished branded hero artwork, not a webpage screenshot or mockup. Opaque background.

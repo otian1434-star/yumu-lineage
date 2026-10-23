@@ -1,0 +1,47 @@
+雨沐天堂｜獨立官方網站
+
+首頁：index.html
+可直接以瀏覽器開啟。首頁、指南與所有素材均位於雨沐天堂資料夾內。
+
+建議本機預覽方式
+在本資料夾開啟終端機，執行：npm run dev
+瀏覽：http://127.0.0.1:4175
+此預覽伺服器只讀取本資料夾，使用 Ctrl+C 關閉。
+
+網站內容
+- 首頁：品牌主視覺、快速入口、四大特色、七職業切換、指南推薦。
+- pages/library.html：42 篇遊戲指南，可搜尋與分類。
+- pages/guide.html?id=指南代號：統一閱讀頁，資料表可獨立左右捲動。
+- pages/events.html：雨沐活動公告，先保留空狀態。
+- pages/download.html：雨沐遊戲下載，先不放下載連結。
+- pages/updates.html：雨沐更新歷程，先保留空狀態。
+
+調整設定
+config.js：雨沐名稱、版本草案、未來開服日期、LINE、贊助與動態場景影片設定。
+data/guides.js：雨沐獨立指南資料。
+活動、下載與更新目前為專用空頁；待雨沐正式內容提供後再加入。
+所有數值指南目前都標示「設定草案」，確認正式設定後再移除此提示。
+未設定開服日期或倒數，不沿用其他伺服器日期。
+
+動態場景
+首頁右上按鈕可啟用參考站使用的外部影片場景，預設關閉。
+影片需網路及瀏覽器允許嵌入；無法播放時顯示雨沐原主視覺。
+
+檢查網站
+開發檢查依賴已列於 package.json；若沒有 node_modules，先執行 npm install。
+執行 npm run check：檢查指南路由、連結、圖片路徑、搜尋、分類、七職業切換與資料表容器。
+這些是程式與內容檢查，不等同桌機／手機實際渲染驗證。
+
+維護工具
+scripts/create-pages.cjs：依本專案模板建立內頁。改過內頁內容時請先同步模板再重跑。
+scripts/import-guides.cjs：一次性從工作區既有曜舞指南匯入參考內容的工具。
+一般預覽與網站執行不會呼叫匯入工具，也不依賴其他資料夾。
+
+部署
+雨沐使用獨立 Git repository：https://github.com/otian1434-star/yumu-lineage
+GitHub Pages 專屬網址：https://otian1434-star.github.io/yumu-lineage/
+發布來源為本 repo 的 main 分支 /docs 目錄，不使用其他官網路徑或 GitHub 帳號根網址。
+更新 source 後先執行 npm run check，再執行 npm run build，產生 docs/ 靜態部署副本。
+docs/ 只放官網所需檔案，不包含 node_modules、scripts、design、開發說明與未使用的舊 Logo 版本。
+提交時 source 與 docs/ 一併 commit，再推送至本資料夾的 origin。
+後續實際部署狀態請見 design/deployment.json。

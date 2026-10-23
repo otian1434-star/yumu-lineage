@@ -1,0 +1,258 @@
+{
+  "note": "內容參考工作區既有曜舞遊戲指南，整理為雨沐版本草案。未匯入活動公告、下載連結、更新歷程、社群連結、贊助入口與攻城日期。",
+  "guides": [
+    {
+      "id": "version",
+      "title": "版本設定",
+      "category": "basics",
+      "source": "pages/version.html"
+    },
+    {
+      "id": "features-newbie-guide",
+      "title": "新手引導",
+      "category": "basics",
+      "source": "pages/features-newbie-guide.html"
+    },
+    {
+      "id": "features-class-power",
+      "title": "職業之力介紹",
+      "category": "basics",
+      "source": "pages/features-class-power.html"
+    },
+    {
+      "id": "features-class-skills",
+      "title": "五大職業特色技能",
+      "category": "basics",
+      "source": "pages/features-class-skills.html"
+    },
+    {
+      "id": "job-transfer",
+      "title": "轉職服務",
+      "category": "basics",
+      "source": "pages/job-transfer.html"
+    },
+    {
+      "id": "rules",
+      "title": "遊戲管理規章",
+      "category": "basics",
+      "source": "pages/rules.html"
+    },
+    {
+      "id": "faq",
+      "title": "常見問題",
+      "category": "basics",
+      "source": "pages/faq.html"
+    },
+    {
+      "id": "features-dragon-whisper",
+      "title": "龍之呢喃",
+      "category": "systems",
+      "source": "pages/features-dragon-whisper.html"
+    },
+    {
+      "id": "items-dragon-eye",
+      "title": "四龍之魔眼",
+      "category": "systems",
+      "source": "pages/items-dragon-eye.html"
+    },
+    {
+      "id": "dolls-guide",
+      "title": "娃娃介紹",
+      "category": "systems",
+      "source": "pages/dolls-guide.html"
+    },
+    {
+      "id": "features-pet",
+      "title": "寵物介紹",
+      "category": "systems",
+      "source": "pages/features-pet.html"
+    },
+    {
+      "id": "features-daily-quest",
+      "title": "每日任務",
+      "category": "systems",
+      "source": "pages/features-daily-quest.html"
+    },
+    {
+      "id": "features-level-rewards",
+      "title": "等級獎勵表",
+      "category": "systems",
+      "source": "pages/features-level-rewards.html"
+    },
+    {
+      "id": "features-transform-fusion",
+      "title": "變身卡合成機制",
+      "category": "systems",
+      "source": "pages/features-transform-fusion.html"
+    },
+    {
+      "id": "transform-guide",
+      "title": "變身圖鑑大全",
+      "category": "systems",
+      "source": "pages/transform-guide.html"
+    },
+    {
+      "id": "features-equipment-collection",
+      "title": "圖鑑收藏",
+      "category": "systems",
+      "source": "pages/features-equipment-collection.html"
+    },
+    {
+      "id": "features-hecate",
+      "title": "赫卡特介紹",
+      "category": "systems",
+      "source": "pages/features-hecate.html"
+    },
+    {
+      "id": "features-zodiac",
+      "title": "黃道12宮介紹",
+      "category": "systems",
+      "source": "pages/features-zodiac.html"
+    },
+    {
+      "id": "features-mage-summon",
+      "title": "法師召喚系統",
+      "category": "systems",
+      "source": "pages/features-mage-summon.html"
+    },
+    {
+      "id": "weapons-enhance",
+      "title": "武器強化說明",
+      "category": "equipment",
+      "source": "pages/weapons-enhance.html"
+    },
+    {
+      "id": "armor-accessory-enhance",
+      "title": "飾品強化介紹",
+      "category": "equipment",
+      "source": "pages/armor-accessory-enhance.html"
+    },
+    {
+      "id": "armor-enhance-protect",
+      "title": "防具強化與防爆介紹",
+      "category": "equipment",
+      "source": "pages/armor-enhance-protect.html"
+    },
+    {
+      "id": "armor-roomtis-earring",
+      "title": "倫提斯耳環",
+      "category": "equipment",
+      "source": "pages/armor-roomtis-earring.html"
+    },
+    {
+      "id": "armor-snappers-ring",
+      "title": "史奈普戒指",
+      "category": "equipment",
+      "source": "pages/armor-snappers-ring.html"
+    },
+    {
+      "id": "armor-shoulder-guard",
+      "title": "左右肩甲介紹",
+      "category": "equipment",
+      "source": "pages/armor-shoulder-guard.html"
+    },
+    {
+      "id": "armor-einhasad-belt",
+      "title": "殷海薩腰帶",
+      "category": "equipment",
+      "source": "pages/armor-einhasad-belt.html"
+    },
+    {
+      "id": "armor-anti-magic",
+      "title": "滅魔裝備介紹",
+      "category": "equipment",
+      "source": "pages/armor-anti-magic.html"
+    },
+    {
+      "id": "armor-special-shield",
+      "title": "特殊臂盾介紹",
+      "category": "equipment",
+      "source": "pages/armor-special-shield.html"
+    },
+    {
+      "id": "armor-stat-shirt",
+      "title": "能力內衣",
+      "category": "equipment",
+      "source": "pages/armor-stat-shirt.html"
+    },
+    {
+      "id": "armor-stat-pants",
+      "title": "能力脛甲",
+      "category": "equipment",
+      "source": "pages/armor-stat-pants.html"
+    },
+    {
+      "id": "armor-stat-boots",
+      "title": "能力長靴",
+      "category": "equipment",
+      "source": "pages/armor-stat-boots.html"
+    },
+    {
+      "id": "armor-level-badge",
+      "title": "等級徽章",
+      "category": "equipment",
+      "source": "pages/armor-level-badge.html"
+    },
+    {
+      "id": "equipment-dragon-seal",
+      "title": "龍印魔石",
+      "category": "equipment",
+      "source": "pages/equipment-dragon-seal.html"
+    },
+    {
+      "id": "equipment-arrogance-gem",
+      "title": "傲慢寶石",
+      "category": "equipment",
+      "source": "pages/equipment-arrogance-gem.html"
+    },
+    {
+      "id": "equipment-hero-badge",
+      "title": "勇者徽章",
+      "category": "equipment",
+      "source": "pages/equipment-hero-badge.html"
+    },
+    {
+      "id": "equipment-fishing-talisman",
+      "title": "釣魚護符",
+      "category": "equipment",
+      "source": "pages/equipment-fishing-talisman.html"
+    },
+    {
+      "id": "items-candle",
+      "title": "回憶蠟燭",
+      "category": "equipment",
+      "source": "pages/items-candle.html"
+    },
+    {
+      "id": "map-training",
+      "title": "專屬練功地圖",
+      "category": "maps",
+      "source": "pages/map-training.html"
+    },
+    {
+      "id": "map-elemental-prison",
+      "title": "屬性監獄",
+      "category": "maps",
+      "source": "pages/map-elemental-prison.html"
+    },
+    {
+      "id": "map-dream-island",
+      "title": "夢幻之島",
+      "category": "maps",
+      "source": "pages/map-dream-island.html"
+    },
+    {
+      "id": "features-domination-tower",
+      "title": "支配之塔",
+      "category": "maps",
+      "source": "pages/features-domination-tower.html"
+    },
+    {
+      "id": "features-infinite-battle",
+      "title": "無限大戰",
+      "category": "maps",
+      "source": "pages/features-infinite-battle.html"
+    }
+  ],
+  "assets": []
+}

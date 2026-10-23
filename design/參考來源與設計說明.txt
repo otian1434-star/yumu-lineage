@@ -1,0 +1,37 @@
+雨沐天堂官方網站｜設計與素材來源
+
+網站設計參考：https://lineage1reborn.com/
+參考導覽層次、集中閱讀區、內容分類與動態場景的呈現方式。
+雨沐採用已認可的專屬 Logo 與主視覺，另以青玉、霧銀、晨光與淺色閱讀區呈現。
+
+工作區內原有美術
+assets/brand/：使用者已確認的雨沐 Logo。
+assets/hero/：雨沐官方主視覺，含 Logo。
+assets/backgrounds/：雨沐雨後初晴無字背景。
+assets/line/：雨沐 LINE 官方頭貼。
+assets/classes/：從工作區既有 assets/media/classes/ 複製的七職業形象。網站執行時使用本專案副本。
+
+參考站點綴圖片（已下載本機，不使用圖片熱連結）
+assets/reference/water-crest.webp
+來源：https://lineage1reborn.com/images/reputation/crests/water-96.webp
+assets/reference/forest-crest.webp
+來源：https://lineage1reborn.com/images/reputation/crests/elves-96.webp
+assets/reference/ivory-crest.webp
+來源：https://lineage1reborn.com/images/reputation/crests/ivory-96.webp
+assets/reference/stone-crest.webp
+來源：https://lineage1reborn.com/images/reputation/crests/earth-96.webp
+以上圖片僅作氛圍點綴，不代表雨沐存在參考站的聲望陣營系統。
+
+動態場景
+參考站首頁使用 YouTube 場景影片，而非可直接下載的 MP4。
+原始影片：https://www.youtube.com/watch?v=dFlKOUeNczg
+雨沐首頁提供「動態場景」按鈕，僅在使用者開啟時載入外部播放器。預設顯示雨沐主視覺。
+只有收到播放狀態後才切換畫面；載入失敗則保留雨沐主視覺。
+實作參考：https://developers.google.com/youtube/iframe_api_reference
+
+遊戲內容
+42 篇指南參考曜舞天堂既有內容，已重整為雨沐獨立資料集，來源列於 content-sources.json。
+包含新手與職業、特色與養成、裝備與道具、地圖與挑戰。
+遊戲數值尚未視為雨沐正式設定；指南上方均顯示設定草案說明。
+活動公告、下載連結與更新歷程未匯入；頁面保留雨沐專屬空狀態。
+客服、社群與贊助入口未沿用其他伺服器連結。

@@ -1,0 +1,109 @@
+{
+  "directory": "docs",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "33c3a6371bdb027ee59fb5e19c0ed1f229516401c2a0404f29927ecf1a9c4397"
+    },
+    {
+      "path": "config.js",
+      "sha256": "29715c5b686926a9bf2dab680ea701d460c899c273adfd7245685b7e95501495"
+    },
+    {
+      "path": "data/guides.js",
+      "sha256": "1da0650da01e403e0f537fb56afa3aa5280617c3336962df712234cc73e761de"
+    },
+    {
+      "path": "pages/download.html",
+      "sha256": "b973c8baadd5e56ee05f906c274c62a5afe8ed4d4b6c430e0e63456c6a57113f"
+    },
+    {
+      "path": "pages/events.html",
+      "sha256": "c401ad8bca6a4d501f5e6f9c4d7ebefd583384cd2f36766a421d8b4d634e3a39"
+    },
+    {
+      "path": "pages/guide.html",
+      "sha256": "ef6bb4b070bbf5abceec007fefa659ae0157abc9a41237b7ff226366fbf2fded"
+    },
+    {
+      "path": "pages/library.html",
+      "sha256": "9824eee46b20423072fd61fd71c32769e801b0fac175a78994d6404711486c3d"
+    },
+    {
+      "path": "pages/updates.html",
+      "sha256": "27b2e03ac39bcbeff64cb9a794f96b424abd64ccc2ed8e64c09778b6d43c54b0"
+    },
+    {
+      "path": "assets/css/site.css",
+      "sha256": "43c2277e1fc2363319d0fb824afb1cb13c7b756933ca692b8ab937450d0bde73"
+    },
+    {
+      "path": "assets/js/site.js",
+      "sha256": "6fc415afa29b004bb32150d7eb10156492119feb5db2c4c4626de2226c407294"
+    },
+    {
+      "path": "assets/classes/dark-elf.jpg",
+      "sha256": "f022f5c449cf1c014b5782d3d04522298d38bc81c95def7d211b6221c50b05bb"
+    },
+    {
+      "path": "assets/classes/dragon-knight.jpg",
+      "sha256": "2872411adba88eb20348e552aebd4e805945de11af39c25d0a232d5b18f6c87f"
+    },
+    {
+      "path": "assets/classes/elf.jpg",
+      "sha256": "aa85385f6cd86b94ae8e33b0acf34272e6a22dfd17f14917f7b7009bb3ebd2f8"
+    },
+    {
+      "path": "assets/classes/illusionist.jpg",
+      "sha256": "929d107d430a14dbadecf0fb054e7f730040fb278789fc4be394b2f4288f626d"
+    },
+    {
+      "path": "assets/classes/knight.jpg",
+      "sha256": "cf552894d49e1340ae7b8ca129aff26cdfce64b1ea0dc406b4df2d060613a6e1"
+    },
+    {
+      "path": "assets/classes/royal.jpg",
+      "sha256": "c13abe21cb4d4376a95fb8ad4e91c81c31b9becf90c762ca0e981da458af19cf"
+    },
+    {
+      "path": "assets/classes/wizard.jpg",
+      "sha256": "cc2a6ab9484476e8a31e134f8b15f7551f4f14705c4fa36eb8c64e66f890450d"
+    },
+    {
+      "path": "assets/reference/forest-crest.webp",
+      "sha256": "60574938c59b124852fa07f442ff55b83c0994aa3319c7c69caec7a673658b9a"
+    },
+    {
+      "path": "assets/reference/ivory-crest.webp",
+      "sha256": "2530abe400990a921c87231370af5b7585b766d136e95244b8cb6efadbbe5ed0"
+    },
+    {
+      "path": "assets/reference/stone-crest.webp",
+      "sha256": "d249eff64097350b6ea7d53cee72c5f19cd98749a2c341fc04da67d8c303573d"
+    },
+    {
+      "path": "assets/reference/water-crest.webp",
+      "sha256": "0d9edad66ec64a93c49bc9ba62a1fa8cfc7bd8b56fcf8e742c14fd7f0ebf690f"
+    },
+    {
+      "path": "assets/hero/雨沐天堂-官方主視覺-含LOGO-v1.png",
+      "sha256": "71fb214f44d6a1260074ef9914d8feeac9cba2ea46b2e5fa66165d063275d01b"
+    },
+    {
+      "path": "assets/backgrounds/雨沐天堂-雨後初晴-無字背景-v1.png",
+      "sha256": "bfba520e2b78ac85f32678e49168a334271c6f3b28c61ad09e75ebdbc8dba9b2"
+    },
+    {
+      "path": "assets/line/雨沐天堂-LINE官方頭貼-v1.png",
+      "sha256": "09a23e81a35231c94e9c9466d23dfefdbac866972ef34440fa8345eda51af6e7"
+    },
+    {
+      "path": "assets/brand/雨沐天堂-logo-v3-中英精品版.png",
+      "sha256": "7949d43f9b23f5380f249ca31a2d5ee028072d5bdceda05706323f853cbb333b"
+    },
+    {
+      "path": ".nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

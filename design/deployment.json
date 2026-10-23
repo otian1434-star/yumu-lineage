@@ -1,0 +1,15 @@
+{
+  "repository": "otian1434-star/yumu-lineage",
+  "repository_id": 1431197219,
+  "repository_url": "https://github.com/otian1434-star/yumu-lineage",
+  "website_url": "https://otian1434-star.github.io/yumu-lineage/",
+  "branch": "main",
+  "pages_source": "/docs",
+  "status": "repository_created",
+  "existing_projects_before_publish": [
+    { "repository": "my-gas-link", "url": "https://otian1434-star.github.io/my-gas-link/", "branch": "main", "path": "/", "cname": null },
+    { "repository": "yintian-forum", "url": "https://otian1434-star.github.io/yintian-forum/", "branch": "main", "path": "/", "cname": null },
+    { "repository": "r-fee48eb6c25205e88e12", "url": "https://otian1434-star.github.io/r-fee48eb6c25205e88e12/", "branch": "main", "path": "/", "cname": null },
+    { "repository": "yaochuan-tiantang", "url": "https://otian1434-star.github.io/yaochuan-tiantang/", "branch": "main", "path": "/", "cname": null }
+  ]
+}
