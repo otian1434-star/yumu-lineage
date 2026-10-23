@@ -4,7 +4,7 @@ window.YUMU_CONFIG = {
   tagline: '雨過天晴，與你重返亞丁。',
   version: '3.81 內掛版',
   contentStatus: 'draft',
-  openingDate: null,
+  openingDate: '2026-11-12T20:00:00+08:00',
   lineOfficial: '',
   lineCommunity: '',
   sponsorUrl: '',

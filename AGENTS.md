@@ -23,3 +23,7 @@
 - GitHub Pages 來源：本 repo 的 `main` 分支 `/docs` 目錄。每次推送官網更新前，先執行 `npm run check` 與 `npm run build`，把更新後的 `docs/` 一併提交。
 - `docs/` 是自動產生的部署副本，請修改 source 後重新建置，不要只修改 `docs/`。
 - commit 使用本 repo local 身分：`otian1434-star <otian1434-star@users.noreply.github.com>`。
+- 已確認開服時間：2026/11/12 20:00（Asia/Taipei）；`config.js` 的 `openingDate` 為倒數時間來源。
+- 已確認版本設定：3.81 內掛版，經驗 15 倍（內掛 1 倍）、金幣 6 倍、掉落 5 倍、武防強化 2 倍、正義 3 倍、負重 4 倍、寵物經驗 3 倍；玩家上限 70 級、寵物 52 級、手點 25 點、萬能藥 10 瓶、素質總上限 35 點。
+- 新手引導 Lv.45–55「魔族拋棄地」已移除開服暫未開放註記。維護時直接修改雨沐獨立資料，勿重新匯入曜舞資料覆蓋已確認內容。
+- 全站頁尾私服123使用 `assets/reference/private-server-123.gif`；連結為 `https://www.gamex123.com/lineage.html`。

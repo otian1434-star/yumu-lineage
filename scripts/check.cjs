@@ -6,7 +6,7 @@ const { parseHTML } = require('linkedom');
 const root = path.resolve(__dirname, '..');
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 
-function openPage(file, query = '') {
+function openPage(file, query = '', now) {
   const { window } = parseHTML(read(file));
   const location = new URL(`http://localhost/${file}${query}`);
   window.location = location;
@@ -16,7 +16,11 @@ function openPage(file, query = '') {
   const sandbox = {
     window, document: window.document, location,
     history: { replaceState: () => {} },
-    URL, URLSearchParams, console, setTimeout: () => 1, clearTimeout: () => {}
+    URL, URLSearchParams, console, setTimeout: () => 1, clearTimeout: () => {}, setInterval: () => 1, clearInterval: () => {}
+  };
+  if (now !== undefined) sandbox.Date = class extends Date {
+    constructor(...args) { super(...(args.length ? args : [now])); }
+    static now() { return now; }
   };
   vm.createContext(sandbox);
   for (const file of ['config.js', 'data/guides.js', 'assets/js/site.js']) vm.runInContext(read(file), sandbox, { filename: file });
@@ -44,13 +48,35 @@ function validateDocument(document, file) {
   }
 }
 
-const home = openPage('index.html');
+const home = openPage('index.html', '', Date.parse('2026-11-10T16:25:50+08:00'));
 assert.equal(home.guides.length, 42);
 assert.equal(home.config.announcements.length, 0);
 assert.equal(home.config.downloads.length, 0);
 assert.equal(home.config.updates.length, 0);
 assert.equal(home.config.lineOfficial, '');
 assert.equal(home.config.sponsorUrl, '');
+assert.equal(home.config.openingDate, '2026-11-12T20:00:00+08:00');
+assert.equal(home.document.getElementById('opening-date').textContent, '2026/11/12（四）20:00');
+assert.deepEqual(['days', 'hours', 'minutes', 'seconds'].map(unit => home.document.getElementById(`opening-${unit}`).textContent), ['02', '03', '34', '10']);
+for (const now of ['2026-11-12T20:00:00+08:00', '2026-11-13T20:00:00+08:00']) {
+  const reached = openPage('index.html', '', Date.parse(now));
+  assert.equal(reached.document.getElementById('opening-state').textContent, '開服時間已到');
+  assert.deepEqual(['days', 'hours', 'minutes', 'seconds'].map(unit => reached.document.getElementById(`opening-${unit}`).textContent), ['00', '00', '00', '00']);
+}
+const oneSecond = openPage('index.html', '', Date.parse('2026-11-12T19:59:59+08:00'));
+assert.equal(oneSecond.document.getElementById('opening-seconds').textContent, '01');
+assert.equal(oneSecond.document.getElementById('opening-state').textContent, '距離正式開服');
+const footerBanner = home.document.querySelector('.footer-partners a');
+assert.equal(footerBanner.getAttribute('href'), 'https://www.gamex123.com/lineage.html');
+assert.equal(footerBanner.getAttribute('target'), '_blank');
+assert.ok(footerBanner.querySelector('img').getAttribute('src').endsWith('private-server-123.gif'));
+assert.ok(fs.readFileSync(path.join(root, 'assets/reference/private-server-123.gif')).subarray(0, 6).toString().startsWith('GIF8'));
+const versionContent = home.guides.find(guide => guide.id === 'version').text.replace(/\s+/g, '');
+for (const setting of ['遊戲版本：3.81內掛版', '經驗倍率：15倍（內掛倍率：1倍）', '金幣倍率：6倍', '掉落倍率：5倍', '武防強化：2倍', '正義倍率：3倍', '負重倍率：4倍', '寵物經驗：3倍', '玩家等級上限：70級', '寵物等級上限：52級', '手點能力上限：25點', '萬能藥限制：10瓶', '素質總上限：35點']) assert.ok(versionContent.includes(setting), `Missing official setting: ${setting}`);
+const newbieContent = home.guides.find(guide => guide.id === 'features-newbie-guide');
+assert.ok(!newbieContent.html.includes('魔族拋棄地（開服暫未開放）'));
+assert.ok(newbieContent.html.includes('<h3>魔族拋棄地</h3>'));
+assert.ok(newbieContent.text.includes('原生魔族拋棄地') && newbieContent.text.includes('不死魔族拋棄地'));
 validateDocument(home.document, 'index.html');
 
 const menuButton = home.document.querySelector('.menu-toggle');
@@ -90,6 +116,8 @@ for (const guide of home.guides) {
   assert.ok(!/<script|<iframe|onerror=|onclick=|style=/.test(guide.html), `Unsanitized guide: ${guide.id}`);
   const article = openPage('pages/guide.html', `?id=${guide.id}`);
   assert.equal(article.document.getElementById('article-title').textContent, guide.title);
+  if (guide.notice) assert.equal(article.document.querySelector('.draft-note p').textContent, guide.notice);
+  assert.equal(article.document.querySelector('.footer-partners a').getAttribute('href'), 'https://www.gamex123.com/lineage.html');
   assert.ok(article.document.getElementById('article-body').textContent.trim().length > 40);
   for (const table of article.document.querySelectorAll('table')) {
     assert.ok(table.parentElement.classList.contains('table-scroll'), `Uncontained table: ${guide.id}`);
@@ -108,4 +136,5 @@ for (const id of ['events', 'download', 'updates']) {
 }
 console.log(`PASS: 42 guide routes, ${tableChecks} scrollable tables, ${linkChecks} local links, ${assetChecks} asset references.`);
 console.log('PASS: search, category filters, empty results, menu, 7 class tabs, unknown guide route, and intentionally empty announcements/downloads/updates.');
+console.log('PASS: official server rates and limits, open training area, Taiwan opening countdown boundaries, and linked GIF banner on all guide pages.');
 console.log('Visual layout and remote video playback still require browser verification.');

@@ -24,7 +24,36 @@
   </header>`;
 
   const footer = document.getElementById('site-footer');
-  if (footer) footer.innerHTML = `<footer class="site-footer"><div class="footer-brand"><a href="${prefix}index.html" aria-label="雨沐天堂首頁"><img src="${prefix}assets/brand/雨沐天堂-logo-v3-中英精品版.png" alt="雨沐天堂" loading="lazy"></a><p>雨過天晴，與你重返亞丁。</p></div><nav class="footer-links" aria-label="頁尾導覽"><a href="${libraryUrl()}">冒險指南</a><a href="${guideUrl('rules')}">遊戲規章</a><a href="${guideUrl('faq')}">常見問題</a></nav><div class="footer-legal"><span>© ${new Date().getFullYear()} 雨沐天堂 · YUMU LINEAGE</span><span>指南內容為設定草案，實際開放內容以正式公告為準。</span></div></footer>`;
+  if (footer) footer.innerHTML = `<footer class="site-footer"><div class="footer-brand"><a href="${prefix}index.html" aria-label="雨沐天堂首頁"><img src="${prefix}assets/brand/雨沐天堂-logo-v3-中英精品版.png" alt="雨沐天堂" loading="lazy"></a><p>雨過天晴，與你重返亞丁。</p></div><nav class="footer-links" aria-label="頁尾導覽"><a href="${libraryUrl()}">冒險指南</a><a href="${guideUrl('rules')}">遊戲規章</a><a href="${guideUrl('faq')}">常見問題</a></nav><div class="footer-legal"><span>© ${new Date().getFullYear()} 雨沐天堂 · YUMU LINEAGE</span><span>指南內容為設定草案，實際開放內容以正式公告為準。</span></div><div class="footer-partners"><a href="https://www.gamex123.com/lineage.html" target="_blank" rel="noopener noreferrer" aria-label="私服123（另開視窗）"><img src="${prefix}assets/reference/private-server-123.gif" alt="私服123" width="88" height="31" loading="lazy"></a></div></footer>`;
+
+  const openingBanner = document.getElementById('opening-banner');
+  if (openingBanner) {
+    const target = Date.parse(config.openingDate);
+    if (!Number.isFinite(target)) {
+      openingBanner.hidden = true;
+    } else {
+      const dateText = new Intl.DateTimeFormat('zh-TW', { timeZone: 'Asia/Taipei', year: 'numeric', month: '2-digit', day: '2-digit' }).format(target);
+      const weekday = new Intl.DateTimeFormat('zh-TW', { timeZone: 'Asia/Taipei', weekday: 'short' }).format(target).replace('週', '');
+      const clock = new Intl.DateTimeFormat('zh-TW', { timeZone: 'Asia/Taipei', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(target);
+      const openingDate = document.getElementById('opening-date');
+      openingDate.textContent = `${dateText}（${weekday}）${clock}`;
+      openingDate.setAttribute('datetime', config.openingDate);
+      let timer;
+      function updateOpeningCountdown() {
+        const remaining = Math.max(0, Math.floor((target - Date.now()) / 1000));
+        const values = [Math.floor(remaining / 86400), Math.floor(remaining % 86400 / 3600), Math.floor(remaining % 3600 / 60), remaining % 60];
+        ['days', 'hours', 'minutes', 'seconds'].forEach((unit, index) => {
+          document.getElementById(`opening-${unit}`).textContent = String(values[index]).padStart(2, '0');
+        });
+        const reached = Date.now() >= target;
+        document.getElementById('opening-state').textContent = reached ? '開服時間已到' : '距離正式開服';
+        document.getElementById('opening-countdown').setAttribute('aria-label', reached ? '開服時間已到' : '距離正式開服倒數');
+        if (reached) clearInterval(timer);
+      }
+      updateOpeningCountdown();
+      if (Date.now() < target) timer = setInterval(updateOpeningCountdown, 1000);
+    }
+  }
 
   const menu = document.querySelector('.menu-toggle');
   const nav = document.getElementById('main-nav');
@@ -109,6 +138,7 @@
       document.getElementById('article-category').textContent = categories[guide.category];
       document.getElementById('article-title').textContent = guide.title;
       document.getElementById('article-description').textContent = guide.description;
+      if (guide.notice) document.querySelector('.draft-note p').textContent = guide.notice;
       document.querySelector('.breadcrumb>span:last-child').textContent = guide.title;
       const sidebar = document.getElementById('guide-sidebar');
       sidebar.innerHTML = `<p>${categories[guide.category]}</p>` + guides.filter(item => item.category === guide.category).map(item => `<a href="${guideUrl(item.id)}" ${item.id === guide.id ? 'aria-current="page"' : ''}>${escape(item.title)}</a>`).join('') + `<a class="sidebar-back" href="${libraryUrl(guide.category)}">← 查看全部分類</a>`;

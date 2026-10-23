@@ -3,15 +3,15 @@
   "files": [
     {
       "path": "index.html",
-      "sha256": "33c3a6371bdb027ee59fb5e19c0ed1f229516401c2a0404f29927ecf1a9c4397"
+      "sha256": "1455d3a861460eaccc44d491dc50e2bb4a3740bb366e2811a260e1205640cdb9"
     },
     {
       "path": "config.js",
-      "sha256": "29715c5b686926a9bf2dab680ea701d460c899c273adfd7245685b7e95501495"
+      "sha256": "dc33c29ff282babd61f90d564173ef4bf87e39b67162a98c353bc30cda1ab58d"
     },
     {
       "path": "data/guides.js",
-      "sha256": "1da0650da01e403e0f537fb56afa3aa5280617c3336962df712234cc73e761de"
+      "sha256": "6ef5fd7848e1e27b4adc1dc03c92b5b190062299b3ed77c1303fe8e06f1ef5f5"
     },
     {
       "path": "pages/download.html",
@@ -35,11 +35,11 @@
     },
     {
       "path": "assets/css/site.css",
-      "sha256": "43c2277e1fc2363319d0fb824afb1cb13c7b756933ca692b8ab937450d0bde73"
+      "sha256": "6c27ecc078fb4c2786f47c83862810bfba8623c760bf4e1f466adf18cec6538a"
     },
     {
       "path": "assets/js/site.js",
-      "sha256": "6fc415afa29b004bb32150d7eb10156492119feb5db2c4c4626de2226c407294"
+      "sha256": "243871776710c4b6125259d6ab90eecde4bf0f6e3955c250708998057aab3d55"
     },
     {
       "path": "assets/classes/dark-elf.jpg",
@@ -76,6 +76,10 @@
     {
       "path": "assets/reference/ivory-crest.webp",
       "sha256": "2530abe400990a921c87231370af5b7585b766d136e95244b8cb6efadbbe5ed0"
+    },
+    {
+      "path": "assets/reference/private-server-123.gif",
+      "sha256": "2f6595ea6eff5007c699fe1bfce9d92c23b0dc040f8297cab2eb2fd59f63814f"
     },
     {
       "path": "assets/reference/stone-crest.webp",
