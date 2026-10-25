@@ -20,7 +20,7 @@
       <details class="nav-group"><summary>官方消息</summary><div class="nav-popover"><a href="${prefix}pages/events.html">活動公告</a><a href="${prefix}pages/updates.html">更新歷程</a></div></details>
       <a href="${prefix}pages/download.html" ${page === 'download' ? 'aria-current="page"' : ''}>遊戲下載</a>
     </nav>
-    <div class="header-tools"><button class="search-open" type="button" aria-label="搜尋遊戲指南"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 5 5"></path></svg></button><button class="contact-button" type="button" disabled title="雨沐官方 LINE 連結尚未公布">LINE 敬請期待</button><button class="menu-toggle" type="button" aria-label="開啟導覽選單" aria-controls="main-nav" aria-expanded="false"><span></span><span></span><span></span></button></div>
+    <div class="header-tools"><button class="search-open" type="button" aria-label="搜尋遊戲指南"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 5 5"></path></svg></button>${config.lineOfficial ? `<a class="contact-button" href="${config.lineOfficial}" target="_blank" rel="noopener noreferrer">LINE 官方</a>` : `<button class="contact-button" type="button" disabled title="雨沐官方 LINE 連結尚未公布">LINE 敬請期待</button>`}<button class="menu-toggle" type="button" aria-label="開啟導覽選單" aria-controls="main-nav" aria-expanded="false"><span></span><span></span><span></span></button></div>
   </header>`;
 
   const footer = document.getElementById('site-footer');
