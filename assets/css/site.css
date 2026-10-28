@@ -25,3 +25,9 @@
 @media(max-width:800px){.opening-banner{padding:24px 26px;gap:21px;flex-wrap:wrap}.opening-copy h2{font-size:20px}.opening-countdown>div{min-width:65px;padding:4px 10px}.opening-countdown strong{font-size:30px}}
 @media(max-width:520px){.opening-banner{padding:24px 22px;display:block}.opening-copy h2{font-size:20px;gap:8px}.opening-countdown{margin-top:21px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:100%}.opening-countdown>div{min-width:0;padding:0 9px}.opening-countdown>div:first-child{border-left:0}.opening-countdown strong{font-size:32px}.footer-partners{align-self:center;padding-top:2px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
+/* 無限大亂鬥能力與材料表：保留數值欄寬，手機橫向捲動。 */
+.article-body .brawl-reward-table{min-width:360px}
+.article-body .brawl-stats-table{min-width:960px}
+.article-body .brawl-craft-table{min-width:820px}
+.article-body .brawl-stats-table th,.article-body .brawl-stats-table td,.article-body .brawl-craft-table th,.article-body .brawl-craft-table td{white-space:nowrap}

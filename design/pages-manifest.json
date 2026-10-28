@@ -11,7 +11,7 @@
     },
     {
       "path": "data/guides.js",
-      "sha256": "cc4a499f539d69951f8355375caab86e4f62d62c78725298e8ef81114c78a4eb"
+      "sha256": "dcf9a786209470c53b4bee7c3c99999f39b9412753b4eef1770fa619764216fe"
     },
     {
       "path": "pages/download.html",
@@ -35,7 +35,7 @@
     },
     {
       "path": "assets/css/site.css",
-      "sha256": "6c27ecc078fb4c2786f47c83862810bfba8623c760bf4e1f466adf18cec6538a"
+      "sha256": "951f9f159fc6fc8b8ae3cb70a803aa2331accfe467c658e455aa1dbf3f83c394"
     },
     {
       "path": "assets/js/site.js",
