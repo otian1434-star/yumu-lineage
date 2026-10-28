@@ -7,11 +7,11 @@
     },
     {
       "path": "config.js",
-      "sha256": "dc33c29ff282babd61f90d564173ef4bf87e39b67162a98c353bc30cda1ab58d"
+      "sha256": "9bfde06b504003cc8346a6645aff678ee1c39ee03beaa0b57bf92d66ec1dc63a"
     },
     {
       "path": "data/guides.js",
-      "sha256": "6ef5fd7848e1e27b4adc1dc03c92b5b190062299b3ed77c1303fe8e06f1ef5f5"
+      "sha256": "cc4a499f539d69951f8355375caab86e4f62d62c78725298e8ef81114c78a4eb"
     },
     {
       "path": "pages/download.html",
@@ -39,7 +39,7 @@
     },
     {
       "path": "assets/js/site.js",
-      "sha256": "243871776710c4b6125259d6ab90eecde4bf0f6e3955c250708998057aab3d55"
+      "sha256": "9b5685d48717ddb115436a2c05d8869431d44d84dcae093a71f19f00f33bcb56"
     },
     {
       "path": "assets/classes/dark-elf.jpg",

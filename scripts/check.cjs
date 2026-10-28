@@ -49,11 +49,11 @@ function validateDocument(document, file) {
 }
 
 const home = openPage('index.html', '', Date.parse('2026-11-10T16:25:50+08:00'));
-assert.equal(home.guides.length, 42);
+assert.equal(home.guides.length, 43);
 assert.equal(home.config.announcements.length, 0);
 assert.equal(home.config.downloads.length, 0);
 assert.equal(home.config.updates.length, 0);
-assert.equal(home.config.lineOfficial, '');
+assert.equal(home.config.lineOfficial, 'https://lin.ee/6MBtAS7');
 assert.equal(home.config.sponsorUrl, '');
 assert.equal(home.config.openingDate, '2026-11-12T20:00:00+08:00');
 assert.equal(home.document.getElementById('opening-date').textContent, '2026/11/12（四）20:00');
@@ -107,7 +107,7 @@ const libraryInput = library.document.getElementById('library-query');
 libraryInput.value = 'zzzz-no-guide'; libraryInput.dispatchEvent(new library.window.Event('input'));
 assert.equal(library.document.querySelectorAll('.guide-card').length, 0);
 library.document.getElementById('clear-filters').click();
-assert.equal(library.document.querySelectorAll('.guide-card').length, 42);
+assert.equal(library.document.querySelectorAll('.guide-card').length, 43);
 validateDocument(library.document, 'pages/library.html');
 
 let tableChecks = 0;
@@ -134,7 +134,7 @@ for (const id of ['events', 'download', 'updates']) {
   assert.equal(empty.document.querySelectorAll('.article-body').length, 0);
   validateDocument(empty.document, `pages/${id}.html`);
 }
-console.log(`PASS: 42 guide routes, ${tableChecks} scrollable tables, ${linkChecks} local links, ${assetChecks} asset references.`);
+console.log(`PASS: 43 guide routes, ${tableChecks} scrollable tables, ${linkChecks} local links, ${assetChecks} asset references.`);
 console.log('PASS: search, category filters, empty results, menu, 7 class tabs, unknown guide route, and intentionally empty announcements/downloads/updates.');
 console.log('PASS: official server rates and limits, open training area, Taiwan opening countdown boundaries, and linked GIF banner on all guide pages.');
 console.log('Visual layout and remote video playback still require browser verification.');
