@@ -3,23 +3,23 @@
   "files": [
     {
       "path": "index.html",
-      "sha256": "1455d3a861460eaccc44d491dc50e2bb4a3740bb366e2811a260e1205640cdb9"
+      "sha256": "86533f09db09896fa3d293a20b11050108a5baf5e11f404774f190f0c581f8dc"
     },
     {
       "path": "config.js",
-      "sha256": "9bfde06b504003cc8346a6645aff678ee1c39ee03beaa0b57bf92d66ec1dc63a"
+      "sha256": "79d78db0b451b298994246c083376c4a51a26e1d7a2278cc15d7525096c7fa53"
     },
     {
       "path": "data/guides.js",
-      "sha256": "dcf9a786209470c53b4bee7c3c99999f39b9412753b4eef1770fa619764216fe"
+      "sha256": "e15909c2e4aff02b63743a09c5c4cc814af6801da7ee519c5992044907e7e52c"
     },
     {
       "path": "pages/download.html",
-      "sha256": "b973c8baadd5e56ee05f906c274c62a5afe8ed4d4b6c430e0e63456c6a57113f"
+      "sha256": "a0a645c98bbcaac69aea85fc9ad597e7a6687436697bda2e270fa0b755fa7085"
     },
     {
       "path": "pages/events.html",
-      "sha256": "c401ad8bca6a4d501f5e6f9c4d7ebefd583384cd2f36766a421d8b4d634e3a39"
+      "sha256": "2a8faff1f78ab6ebaaced83812162895443803fe447b39d58fe709d7b0ff4959"
     },
     {
       "path": "pages/guide.html",
@@ -35,11 +35,11 @@
     },
     {
       "path": "assets/css/site.css",
-      "sha256": "951f9f159fc6fc8b8ae3cb70a803aa2331accfe467c658e455aa1dbf3f83c394"
+      "sha256": "821f98e5e50df79c3ebc85f806309383eed68e526247cde25f1a70ec8ddb7795"
     },
     {
       "path": "assets/js/site.js",
-      "sha256": "9b5685d48717ddb115436a2c05d8869431d44d84dcae093a71f19f00f33bcb56"
+      "sha256": "3c90e9cad118e58db5363bb8c662fcde7512cf93d48a6425e3c6b52f76ed29ea"
     },
     {
       "path": "assets/classes/dark-elf.jpg",

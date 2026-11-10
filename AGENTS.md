@@ -15,7 +15,7 @@
 - 官網首頁：`index.html`；共用樣式與互動：`assets/css/site.css`、`assets/js/site.js`。
 - 遊戲內容：`data/guides.js`，已獨立匯入 42 篇參考指南。所有數值暫屬設定草案。
 - 使用者指定以 `https://lineage1reborn.com/` 為視覺與結構參考，介面使用繁體中文，追求簡易、明瞭與精細。
-- 活動公告、下載連結、更新歷程先不放其他伺服器的內容；目前三個頁面保留空狀態。
+- 活動公告與更新歷程保持雨沐獨立內容；下載頁已開放，三個正式載點以 `config.js` 的 `downloads` 為來源，不沿用其他伺服器連結。
 - 不沿用其他伺服器的 LINE、客服、贊助入口或開服日期。
 - `npm run dev` 啟動獨立本機預覽；`npm run check` 執行內容與互動檢查。
 - 獨立 GitHub repository：`otian1434-star/yumu-lineage`。本資料夾已使用自己的 `.git`，禁止使用外層 repo 推送雨沐檔案。

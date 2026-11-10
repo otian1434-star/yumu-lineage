@@ -49,9 +49,9 @@ function validateDocument(document, file) {
 }
 
 const home = openPage('index.html', '', Date.parse('2026-11-10T16:25:50+08:00'));
-assert.equal(home.guides.length, 43);
+assert.equal(home.guides.length, 44);
 assert.equal(home.config.announcements.length, 0);
-assert.equal(home.config.downloads.length, 0);
+assert.equal(home.config.downloads.length, 3);
 assert.equal(home.config.updates.length, 0);
 assert.equal(home.config.lineOfficial, 'https://lin.ee/6MBtAS7');
 assert.equal(home.config.sponsorUrl, '');
@@ -100,14 +100,14 @@ globalSearch.value = 'zzzz-no-guide'; globalSearch.dispatchEvent(new home.window
 assert.ok(home.document.getElementById('search-count').textContent.includes('沒有找到'));
 
 const library = openPage('pages/library.html', '?category=equipment');
-assert.equal(library.document.querySelectorAll('.guide-card').length, 18);
+assert.equal(library.document.querySelectorAll('.guide-card').length, 19);
 library.document.querySelector('[data-category="maps"]').click();
 assert.equal(library.document.querySelectorAll('.guide-card').length, 5);
 const libraryInput = library.document.getElementById('library-query');
 libraryInput.value = 'zzzz-no-guide'; libraryInput.dispatchEvent(new library.window.Event('input'));
 assert.equal(library.document.querySelectorAll('.guide-card').length, 0);
 library.document.getElementById('clear-filters').click();
-assert.equal(library.document.querySelectorAll('.guide-card').length, 43);
+assert.equal(library.document.querySelectorAll('.guide-card').length, 44);
 validateDocument(library.document, 'pages/library.html');
 
 let tableChecks = 0;
@@ -126,15 +126,29 @@ for (const guide of home.guides) {
   }
   validateDocument(article.document, 'pages/guide.html');
 }
+const downloadPage = openPage('pages/download.html');
+const downloadLinks = [...downloadPage.document.querySelectorAll('.download-card')];
+assert.equal(downloadLinks.length, 3);
+assert.equal(downloadPage.document.querySelector('.empty-state'), null);
+assert.deepEqual(downloadLinks.map(link => link.getAttribute('href')), ["https://disk.cloud-shield.app/s/VKn8Mj","https://drive.google.com/file/d/10NpPzau7IPlUs7fVQzCBdFozxXEiyePg/view?usp=sharing","https://disk.cloud-shield.app/s/JDDdau"]);
+for (const link of downloadLinks) {
+  assert.equal(link.getAttribute('target'), '_blank');
+  assert.ok(link.getAttribute('rel').includes('noopener'));
+}
+assert.ok(home.document.querySelector('.preparation-links a[href="pages/download.html"]').textContent.includes('已開放下載'));
+validateDocument(downloadPage.document, 'pages/download.html');
 const missing = openPage('pages/guide.html', '?id=missing');
 assert.ok(missing.document.getElementById('article-title').textContent.includes('還沒收錄'));
-for (const id of ['events', 'download', 'updates']) {
+const eventsPage = openPage('pages/events.html');
+assert.ok(eventsPage.document.getElementById('singles-day-event'));
+validateDocument(eventsPage.document, 'pages/events.html');
+for (const id of ['updates']) {
   const empty = openPage(`pages/${id}.html`);
   assert.ok(empty.document.querySelector('.empty-state'));
   assert.equal(empty.document.querySelectorAll('.article-body').length, 0);
   validateDocument(empty.document, `pages/${id}.html`);
 }
-console.log(`PASS: 43 guide routes, ${tableChecks} scrollable tables, ${linkChecks} local links, ${assetChecks} asset references.`);
-console.log('PASS: search, category filters, empty results, menu, 7 class tabs, unknown guide route, and intentionally empty announcements/downloads/updates.');
+console.log(`PASS: 44 guide routes, ${tableChecks} scrollable tables, ${linkChecks} local links, ${assetChecks} asset references.`);
+console.log('PASS: search, category filters, empty results, menu, 7 class tabs, unknown guide route, 3 official download links, and existing event announcements, and intentionally empty update history.');
 console.log('PASS: official server rates and limits, open training area, Taiwan opening countdown boundaries, and linked GIF banner on all guide pages.');
 console.log('Visual layout and remote video playback still require browser verification.');

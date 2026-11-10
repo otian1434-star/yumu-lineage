@@ -26,6 +26,12 @@
   const footer = document.getElementById('site-footer');
   if (footer) footer.innerHTML = `<footer class="site-footer"><div class="footer-brand"><a href="${prefix}index.html" aria-label="雨沐天堂首頁"><img src="${prefix}assets/brand/雨沐天堂-logo-v3-中英精品版.png" alt="雨沐天堂" loading="lazy"></a><p>雨過天晴，與你重返亞丁。</p></div><nav class="footer-links" aria-label="頁尾導覽"><a href="${libraryUrl()}">冒險指南</a><a href="${guideUrl('rules')}">遊戲規章</a><a href="${guideUrl('faq')}">常見問題</a></nav><div class="footer-legal"><span>© ${new Date().getFullYear()} 雨沐天堂 · YUMU LINEAGE</span><span>指南內容為設定草案，實際開放內容以正式公告為準。</span></div><div class="footer-partners"><a href="https://www.gamex123.com/lineage.html" target="_blank" rel="noopener noreferrer" aria-label="私服123（另開視窗）"><img src="${prefix}assets/reference/private-server-123.gif" alt="私服123" width="88" height="31" loading="lazy"></a></div></footer>`;
 
+  if (page === 'download') {
+    const downloads = config.downloads || [];
+    const list = document.getElementById('download-list');
+    if (list) list.innerHTML = downloads.length ? downloads.map((download, index) => `<a class="download-card" href="${escape(download.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escape(download.label)}（${escape(download.provider)}，另開視窗）"><span class="download-index" aria-hidden="true">${String(index + 1).padStart(2, '0')}</span><h3>${escape(download.label)}</h3><p>${escape(download.provider)}</p><span class="download-action">前往下載 <span aria-hidden="true">↗</span></span></a>`).join('') : '<p>下載連結準備中，請稍後再查看。</p>';
+  }
+
   const openingBanner = document.getElementById('opening-banner');
   if (openingBanner) {
     const target = Date.parse(config.openingDate);

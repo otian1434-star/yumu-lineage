@@ -9,7 +9,23 @@ window.YUMU_CONFIG = {
   lineCommunity: 'https://lin.ee/6MBtAS7',
   lineId: '@128fcbvy',
   sponsorUrl: '',
-  downloads: [],
+  downloads: [
+    {
+      "label": "下載點 1",
+      "provider": "Cloud Shield",
+      "url": "https://disk.cloud-shield.app/s/VKn8Mj"
+    },
+    {
+      "label": "下載點 2",
+      "provider": "Google 雲端硬碟",
+      "url": "https://drive.google.com/file/d/10NpPzau7IPlUs7fVQzCBdFozxXEiyePg/view?usp=sharing"
+    },
+    {
+      "label": "下載點 3",
+      "provider": "Cloud Shield",
+      "url": "https://disk.cloud-shield.app/s/JDDdau"
+    }
+  ],
   announcements: [],
   updates: [],
   sceneVideo: {
